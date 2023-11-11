@@ -22,7 +22,6 @@ async function checkWeather(city){
     if(response.status == 404){
         document.querySelector(".error").style.display="block";
         document.querySelector(".currentWeather").style.display="none";
-        document.querySelector(".topSection").style.justifycontent="center";
         document.querySelector(".bottomSection").style.display="none";
         document.querySelector(".emote").src="https://media.giphy.com/media/Hzdph9ISDR3e5q0UBy/giphy.gif?cid=ecf05e47iobajmkv4fiyeds7zbiydoosrpcdga4294w3kj3e&ep=v1_stickers_search&rid=giphy.gif&ct=s"
     }
@@ -53,7 +52,6 @@ async function checkWeather(city){
     
 
     document.querySelector(".currentWeather").style.display = "flex";
-    document.querySelector(".topSection").style.justifyContent = "space-between";
     document.querySelector(".bottomSection").style.display = "block";
     document.querySelector(".error").style.display="none";
     document.querySelector(".emote").src="https://media.giphy.com/media/Ku9szLGyD3RuMb2hmB/giphy.gif?cid=ecf05e47iobajmkv4fiyeds7zbiydoosrpcdga4294w3kj3e&ep=v1_stickers_search&rid=giphy.gif&ct=s"
