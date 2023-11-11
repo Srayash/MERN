@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>MERN Project</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Mausam-Dekho</div>
+        <div class="searchBar">
+            <input type="text" placeholder="Enter Your Location"> <button class ="bx bx-search"></button>
+        </div>
+        <div class="currentLocation"><button id="btn">Use Current Location</button></div>
+    </header>
+    <div class="homepage">
+       <div class="topSection">
+        <div class="currentWeather">
+            <div class="imgmain">
+            <img src="./Icons/Cloudy.PNG" class="weatherIcon" height="=300px">
+        </div>
+            <div class="info">
+            <h2 class="city">Guwahati</h2>
+            <h1 class="tempMain">20°C</h1>
+            <h2 class="weatherMain">Cloudy</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./Icons/humidity.PNG">
+                    <div>
+                      <p class="humidity">50%</p>
+                      <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./Icons/wind.PNG">
+                    <div>
+                      <p class="windspeed">1.8Km/h</p>
+                      <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </div>
+        <div class="buddy"><img class="emote" src="https://www.gifcen.com/wp-content/uploads/2022/04/jujutsu-kaisen-gif-9.gif" width="380px"></a>
+        <div class="error"><p>Invalid City Name</p></div></div> 
+       </div>
+       <div class="bottomSection">
+        <div class="weeklyWeather">
+            <ul class="cards">
+                <li>
+                 <!-- sunday -->
+                <div class="contents">
+                   <p class="day">Sunday</p><br>
+                   <img class="img" src="./Icons/Partly Cloudy.PNG" height = "150px">
+                   <p class="temp">20°C</p>
+                   <p class="weather">Partly Cloudy</p><br>
+                </div> 
+                </li>
+                <!-- monday -->
+                <li> <div class="contents">
+                    <p class="day">Monday</p><br>
+                    <img class="img" src="./Icons/Sunny.PNG" height="150px">
+                    <p class="temp">18°C</p>
+                    <p class="weather">Sunny</p><br>
+                 </div></li>
+                 <!-- tuesday -->
+                <li> <div class="contents">
+                    <p class="day">Tuesday</p><br>
+                    <img class="img" src="./Icons/Sunny.PNG" height="150px">
+                    <p class="temp">18°C</p>
+                    <p class="weather">Sunny</p><br>
+                 </div></li>
+                 <!-- wednesday -->
+                <li> <div class="contents">
+                    <p class="day">Wednesday</p><br>
+                    <img class="img" src="./Icons/Sunny.PNG" height="150px">
+                    <p class="temp">18°C</p>
+                    <p class="weather">Sunny</p><br>
+                 </div></li>
+                 <!-- thursday -->
+                <li> <div class="contents">
+                    <p class="day">Thursday</p><br>
+                    <img class="img" src="./Icons/Sunny.PNG" height="150px">
+                    <p class="temp">18°C</p>
+                    <p class="weather">Sunny</p><br>
+                 </div></li>
+                 <!-- Friday -->
+                <li> <div class="contents">
+                    <p class="day">Friday</p><br>
+                    <img class="img" src="./Icons/Sunny.PNG" height="150px">
+                    <p class="temp">17°C</p>
+                    <p class="weather">Sunny</p><br>
+                 </div></li>
+                 <!-- saturday -->
+                <li> <div class="contents">
+                    <p class="day">Saturday</p><br>
+                    <img class="img" src="./Icons/Sunny.png" height="150px">
+                    <p class="temp">17°C</p>
+                    <p class="weather">Sunny</p><br>
+                 </div></li>
+            </ul>
+        </div>
+       </div>
+    </div>
+
+    <script src="currentWeather.js"></script>
+</body>
+</html>
+
+
