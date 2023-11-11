@@ -40,7 +40,7 @@ async function checkWeather(city){
         weatherIcon.src = "./Icons/Cloudy.png"
     }
     else if(data.weather[0].main == "Rain"){
-        weatherIcon.src = "./Icons/Raining.png"
+        weatherIcon.src = "./Icons/Rain.png"
     }
     else if(data.weather[0].main == "Thunderstorm"){
         weatherIcon.src = "./Icons/Bolt.png"
