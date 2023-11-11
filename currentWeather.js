@@ -46,7 +46,7 @@ async function checkWeather(city){
         weatherIcon.src = "./Icons/Bolt.png"
     }
     else if(data.weather[0].main == "Clear"){
-        weatherIcon.src = "./Icons/Sunny.PNG"
+        weatherIcon.src = "./Icons/Sunny.png"
     }
 
     
