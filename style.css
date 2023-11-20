@@ -311,5 +311,7 @@ input::placeholder{
    .info h1{
     font-size: 60px;
    }
-   
+   .contents .day{
+    left: auto;
+   }
  }
