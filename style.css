@@ -231,7 +231,7 @@ input::placeholder{
     font-size: 40px;
 }
 
- @media screen and (max-width: 574px) {
+@media screen and (max-width: 574px) {
     .currentWeather{
         flex-direction:column ;
         align-items: center;
@@ -257,7 +257,7 @@ input::placeholder{
     align-items: center;
    }
    .cards li {
-    height: 8vh;
+    height: 58px;
     width: 100%;
     margin: 2px 0px 2px 0px;
    }
@@ -279,5 +279,18 @@ input::placeholder{
    }
    .weather{
     font-size: 18px;
+   }
+   .logo{
+    font-size: 16px;
+   }
+   #btn{
+    font-size: 11px;
+    padding: 4px;
+   }
+   .searchBar input{
+    width: 50%;
+   }
+   .searchBar{
+    margin-right: 15px;
    }
  }
