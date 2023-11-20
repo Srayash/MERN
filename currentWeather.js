@@ -24,7 +24,6 @@ async function checkWeather(city){
         document.querySelector(".currentWeather").style.display="none";
         document.querySelector(".topSection").style.justifyContent="center";
         document.querySelector(".bottomSection").style.display="none";
-        document.querySelector(".haggu").className="buddy";
         document.querySelector(".emote").src="https://media.giphy.com/media/Hzdph9ISDR3e5q0UBy/giphy.gif?cid=ecf05e47iobajmkv4fiyeds7zbiydoosrpcdga4294w3kj3e&ep=v1_stickers_search&rid=giphy.gif&ct=s"
     }
 
