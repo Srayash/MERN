@@ -41,7 +41,7 @@
     justify-content: center;
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
-    min-height: 40vh;
+    height: 40vh;
     width: 13.8%;
     padding: 10px;
     background-color: #e5bff4d1;
@@ -112,8 +112,8 @@ header{
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
     font-size: 12px;
-    border: 1px solid #651084;
     min-width: 40vw;
+    border: 1px solid #651084;
     background: transparent;
     border-radius: 8px;
     padding: 9px 25px;
@@ -230,15 +230,14 @@ input::placeholder{
     color: #651084;
     font-size: 40px;
 }
-
-@media screen and (max-width: 574px) {
+ @media screen and (max-width: 574px) {
     .currentWeather{
         flex-direction:column ;
         align-items: center;
         justify-content: center;
-        margin: 30px 0px;
         text-align: center;
-       width: 100%;
+        margin: 30px 30px;
+        width: 100%;
     }
     .buddy{
         display: none;
@@ -293,5 +292,8 @@ input::placeholder{
    }
    .searchBar{
     margin-right: 15px;
+   }
+   .currentWeather .info{
+    margin-left: 0px;
    }
  }
