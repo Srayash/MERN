@@ -231,3 +231,53 @@ input::placeholder{
     font-size: 40px;
 }
 
+ @media screen and (max-width: 574px) {
+    .currentWeather{
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       width: 100%;
+    }
+    .buddy{
+        display: none;
+    }
+    .topSection{
+        align-items :center;
+    }
+    .details{
+        justify-content: center;
+    }
+   #formargin{
+    margin-left: 50px;
+   }
+   .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .cards li {
+    height: 8vh;
+    width: 100%;
+    margin: 2px 0px 2px 0px;
+   }
+   .contents{
+    display: inline-flex;
+    align-items: center;
+   }
+   .img{
+    height: 50px;
+   }
+   .day{
+    font-family: 'montserrat', sans-serif;
+    font-weight: 900;
+   }
+   .temp{
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px; 
+   }
+   .weather{
+    font-size: 18px;
+   }
+ }
