@@ -28,7 +28,9 @@
     min-height: 35%;
     min-width: 30%;
 }
-
+.buddy img{
+    width: 100%;
+}
 .cards{
     display: flex;
     justify-content: space-between;
@@ -238,7 +240,7 @@ input::placeholder{
         text-align: center;
         width: 100%;
     }
-    .buddy{
+    .haggu{
         display: none;
     }
     .topSection{
@@ -265,19 +267,21 @@ input::placeholder{
     align-items: center;
    }
    .img{
-    height: 50px;
+    height: 45px;
    }
    .day{
     font-family: 'montserrat', sans-serif;
     font-weight: 900;
+    font-size: 14px;
    }
    .temp{
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
-    font-size: 18px; 
+    font-size: 16px; 
+    margin: 0px 6px;
    }
    .weather{
-    font-size: 18px;
+    font-size: 16px;
    }
    .logo{
     font-size: 16px;
@@ -296,9 +300,16 @@ input::placeholder{
     margin: 0px;
    }
    .col img{
-    width: 30px;
+    width: 25px;
    }
    .col p{
-    font-size: 12px;
+    font-size: 10px;
    }
+   .info h2{
+    font-size: 30px;
+   }
+   .info h1{
+    font-size: 60px;
+   }
+   
  }
