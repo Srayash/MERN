@@ -20,7 +20,8 @@
     min-height: 35%;
     min-width: 60%;
     border-radius: 16px;
-    background-color: #e5bff4d1;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 7%, rgba(0,212,255,1) 100%);
 }
 
 .buddy{
