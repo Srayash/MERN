@@ -29,7 +29,10 @@
     min-width: 30%;
 }
 .buddy img{
-    width: 100%;
+    height:auto;
+    width:auto;
+
+
 }
 .cards{
     display: flex;
