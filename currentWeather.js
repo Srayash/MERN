@@ -1,5 +1,5 @@
 const apiKey = "4236ab8c7654596ba7533fa5099be3cd";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiUrl = "https://api.openweathermap.org/data/2.5/forecast?units=metric&q=";
 
 const searchBar = document.querySelector(".searchBar input");
 const locButton = document.getElementById("btn");
@@ -31,23 +31,24 @@ async function checkWeather(city){
 
     console.log(data);
 
-    document.querySelector(".city").innerHTML = data.name;
-    document.querySelector(".tempMain").innerHTML =  Math.round(data.main.temp) + "°C";
-    document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-    document.querySelector(".windspeed").innerHTML = data.wind.speed + " km/h";
-    document.querySelector(".weatherMain").innerHTML = data.weather[0].main;
+    
+    document.querySelector(".city").innerHTML = data.city[1];
+    document.querySelector(".tempMain").innerHTML =  Math.round(data.list[0].main.temp) + "°C";
+    document.querySelector(".humidity").innerHTML = data.list[0].main.humidity + "%";
+    document.querySelector(".windspeed").innerHTML = data.list[0].wind.speed + " km/h";
+    document.querySelector(".weatherMain").innerHTML = data.list[0].weather[1].main;
     document.querySelector(".buddy").className="haggu";
 
-    if(data.weather[0].main == "Clouds"){
+    if(data.list[0].weather.main == "Clouds"){
         weatherIcon.innerHTML = "./Icons/Cloudy.png"
     }
-    else if(data.weather[0].main == "Rain"){
+    else if(data.list[0].weather.main == "Rain"){
         weatherIcon.src = "./Icons/Raining.png"
     }
-    else if(data.weather[0].main == "Thunderstorm"){
+    else if(data.list[0].weather.main == "Thunderstorm"){
         weatherIcon.src = "./Icons/Bolt.png"
     }
-    else if(data.weather[0].main == "Clear"){
+    else if(data.list[0].weather[1].main == "Clear"){
         weatherIcon.src = "./Icons/Sunny.png"
     }
 
