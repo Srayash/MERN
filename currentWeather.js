@@ -40,17 +40,17 @@ async function checkWeather(city){
     document.querySelector(".weatherMain").innerHTML = data.list[0].weather[0].main;
     document.querySelector(".buddy").className="haggu";
 
-    if(data.list[0].weather[0].main == "Clouds"){
-        weatherIcon.src = "./Icons/Cloudy.png"
-    }
-    else if(data.list[0].weather[0].main == "Rain"){
-        weatherIcon.src = "./Icons/Rain.png"
-    }
-    else if(data.list[0].weather[0].main == "Thunderstorm"){
-        weatherIcon.src = "./Icons/Bolt.png"
-    }
-    else if(data.list[0].weather[0].main == "Clear"){
-        weatherIcon.src = "./Icons/Sunny.png"
+    if(data.list[hourLeft/2 + i*8].weather[0].main == "Clouds"){
+            document.querySelector(`li .img-${i+1}`).src = "./Icons/Cloudy.png"
+        }
+        else if(data.list[hourLeft/2 + i*8].weather[0].main == "Rain"){
+            document.querySelector(`li .img-${i+1}`).src = "./Icons/Rain.png"
+        }
+        else if(data.list[hourLeft/2 + i*8].weather[0].main == "Thunderstorm"){
+            document.querySelector(`li .img-${i+1}`).src = "./Icons/Bolt.png"
+        }
+        else if(data.list[hourLeft/2 + i*8].weather[0].main == "Clear"){
+        document.querySelector(`li .img-${i+1}`).src = "./Icons/Sunny.png"
     }
 
     document.querySelector(".currentWeather").style.display = "flex";
