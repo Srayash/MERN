@@ -24,15 +24,13 @@
 }
 
 .buddy{
-    margin: 30px 30px;
-    min-height: 35%;
-    min-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .buddy img{
-    height:auto;
-    width:auto;
-
-
+    height: 50%;
+    width: 50%;
 }
 .cards{
     display: flex;
