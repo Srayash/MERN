@@ -40,34 +40,7 @@ async function checkWeather(city){
     document.querySelector(".weatherMain").innerHTML = data.list[0].weather[0].main;
     document.querySelector(".buddy").className="haggu";
 
-    if(data.list[hourLeft/2 + i*8].weather[0].main == "Clouds"){
-            document.querySelector(`li .img-${i+1}`).src = "./Icons/Cloudy.png"
-        }
-        else if(data.list[hourLeft/2 + i*8].weather[0].main == "Rain"){
-            document.querySelector(`li .img-${i+1}`).src = "./Icons/Rain.png"
-        }
-        else if(data.list[hourLeft/2 + i*8].weather[0].main == "Thunderstorm"){
-            document.querySelector(`li .img-${i+1}`).src = "./Icons/Bolt.png"
-        }
-        else if(data.list[hourLeft/2 + i*8].weather[0].main == "Clear"){
-        document.querySelector(`li .img-${i+1}`).src = "./Icons/Sunny.png"
-    }
-
-    document.querySelector(".currentWeather").style.display = "flex";
-    document.querySelector(".bottomSection").style.display = "block";
-    document.querySelector(".error").style.display="none";
-    document.querySelector(".topSection").style.justifyContent="space-between";
-    document.querySelector(".emote").src="https://media.giphy.com/media/Ku9szLGyD3RuMb2hmB/giphy.gif?cid=ecf05e47iobajmkv4fiyeds7zbiydoosrpcdga4294w3kj3e&ep=v1_stickers_search&rid=giphy.gif&ct=s"
-
-    let hourLeft = 24-data.list[0].dt_txt.substr(11,2);
-    console.log(hourLeft);
-
-    let cards = document.querySelectorAll(".cards");
-    for(let i = 0; i<=4; i++){
-        document.querySelector(`li .day-${i+1}`).innerHTML = data.list[hourLeft/2 + i*8].dt_txt.substr(0,10);
-        document.querySelector(`li .temp-${i+1}`).innerHTML = Math.round(data.list[hourLeft/2 + i*8].main.temp) + "°C";
-        document.querySelector(`li .weather-${i+1}`).innerHTML = data.list[hourLeft/2 + i*8].weather[0].main;
-        if(data.list[0].weather[0].main == "Clouds"){
+    if(data.list[0].weather[0].main == "Clouds"){
         weatherIcon.src = "./Icons/Cloudy.png"
     }
     else if(data.list[0].weather[0].main == "Rain"){
@@ -78,6 +51,32 @@ async function checkWeather(city){
     }
     else if(data.list[0].weather[0].main == "Clear"){
         weatherIcon.src = "./Icons/Sunny.png"
+    }
+
+    document.querySelector(".currentWeather").style.display = "flex";
+    document.querySelector(".bottomSection").style.display = "block";
+    document.querySelector(".error").style.display="none";
+    document.querySelector(".topSection").style.justifyContent="space-between";
+    document.querySelector(".emote").src="https://media.giphy.com/media/Ku9szLGyD3RuMb2hmB/giphy.gif?cid=ecf05e47iobajmkv4fiyeds7zbiydoosrpcdga4294w3kj3e&ep=v1_stickers_search&rid=giphy.gif&ct=s"
+
+    let hourLeft = 24-data.list[0].dt_txt.substr(11,2);
+
+    let cards = document.querySelectorAll(".cards");
+    for(let i = 0; i<=4; i++){
+        document.querySelector(`li .day-${i+1}`).innerHTML = data.list[hourLeft/2 + i*8].dt_txt.substr(0,10);
+        document.querySelector(`li .temp-${i+1}`).innerHTML = Math.round(data.list[hourLeft/2 + i*8].main.temp) + "°C";
+        document.querySelector(`li .weather-${i+1}`).innerHTML = data.list[hourLeft/2 + i*8].weather[0].main;
+        if(data.list[hourLeft/2 + i*8].weather[0].main == "Clouds"){
+            document.querySelector(`li .img-${i+1}`).src = "./Icons/Cloudy.png"
+        }
+        else if(data.list[hourLeft/2 + i*8].weather[0].main == "Rain"){
+            document.querySelector(`li .img-${i+1}`).src = "./Icons/Rain.png"
+        }
+        else if(data.list[hourLeft/2 + i*8].weather[0].main == "Thunderstorm"){
+            document.querySelector(`li .img-${i+1}`).src = "./Icons/Bolt.png"
+        }
+        else if(data.list[hourLeft/2 + i*8].weather[0].main == "Clear"){
+            document.querySelector(`li .img-${i+1}`).src = "./Icons/Sunny.png"
         }
     }
 }}
