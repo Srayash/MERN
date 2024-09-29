@@ -1,7 +1,5 @@
 const apiKey = "4236ab8c7654596ba7533fa5099be3cd";
 const apiUrl = "https://api.openweathermap.org/data/2.5/forecast?units=metric&q=";
-// "https://api.openweathermap.org/data/2.5/forecast?units=metric&q="
-// "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 
 const searchBar = document.querySelector(".searchBar input");
 const locButton = document.getElementById("btn");
